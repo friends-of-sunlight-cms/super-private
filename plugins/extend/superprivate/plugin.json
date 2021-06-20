@@ -1,4 +1,5 @@
 {
+    "$schema": "../../../system/schema/extend.json",
     "name": "Super Private Website",
     "description": "For absolutely private pages without site layout",
     "version": "1.0",
