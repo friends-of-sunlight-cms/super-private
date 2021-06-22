@@ -7,6 +7,6 @@
     "url": "https://jdanek.eu/",
     "class": "SuperPrivatePlugin",
     "events": [
-        ["index.template", "$this::overloadTemplate"]
+        {"event": "index.template", "method": "overloadTemplate"}
     ]
 }
