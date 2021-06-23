@@ -1,13 +1,8 @@
 <?php
 
-namespace SunlightExtend\SuperPrivate;
+namespace SunlightExtend\Superprivate;
 
-use Sunlight\Core;
-use Sunlight\Extend;
-use Sunlight\GenericTemplates;
 use Sunlight\Plugin\ExtendPlugin;
-use Sunlight\Plugin\PluginManager;
-use Kuria\Error\Screen\WebErrorScreen;
 
 /**
  * Devkit plugin
@@ -16,7 +11,8 @@ use Kuria\Error\Screen\WebErrorScreen;
  */
 class SuperPrivatePlugin extends ExtendPlugin
 {
-    function overloadTemplate($args){
+    public function overloadTemplate($args): void
+    {
         if (!_logged_in && _notpublicsite) {
             $args['path'] = __DIR__ . DIRECTORY_SEPARATOR . 'script.php';
         }
