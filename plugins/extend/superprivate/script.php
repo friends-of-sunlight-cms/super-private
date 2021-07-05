@@ -2,7 +2,7 @@
 
 use Sunlight\User;
 
-defined('_root') or exit;
+defined('SL_ROOT') or exit;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,7 +66,7 @@ defined('_root') or exit;
 <div class="superprivate-wrapper">
     <div class="loginbox">
         <h1><?php echo _lang('login.required.title'); ?></h1>
-        <?php echo User::renderLoginForm(false, _logged_in); ?>
+        <?php echo User::renderLoginForm(false, User::isLoggedIn()); ?>
     </div>
 </div>
 </body>
