@@ -7,16 +7,17 @@ use Sunlight\Settings;
 use Sunlight\User;
 
 /**
- * Devkit plugin
+ * Super private pages
  *
  * @author Jirka Daněk <jdanek.eu>
  */
 class SuperPrivatePlugin extends ExtendPlugin
 {
-    public function overloadTemplate($args): void
+    public function overloadTemplate(array $args): void
     {
         if (!User::isLoggedIn() && Settings::get('notpublicsite')) {
-            $args['path'] = __DIR__ . DIRECTORY_SEPARATOR . 'script.php';
+            $args['index']->templateEnabled = false;
+            $args['index']->output = require __DIR__ . '/script.php';
         }
     }
 }

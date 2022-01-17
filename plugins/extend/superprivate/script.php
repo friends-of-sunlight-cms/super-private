@@ -1,14 +1,15 @@
 <?php
 
+use Sunlight\Core;
 use Sunlight\User;
 
 defined('SL_ROOT') or exit;
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= Core::$lang ?>">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo _lang('login.required.title'); ?></title>
+    <title><?= _lang('login.required.title') ?></title>
     <style>
         body {
             background: radial-gradient(at center 270px, #ededed, #bbbbbb) no-repeat fixed;
@@ -65,8 +66,8 @@ defined('SL_ROOT') or exit;
 <body>
 <div class="superprivate-wrapper">
     <div class="loginbox">
-        <h1><?php echo _lang('login.required.title'); ?></h1>
-        <?php echo User::renderLoginForm(false, User::isLoggedIn()); ?>
+        <h1><?= _lang('login.required.title') ?></h1>
+        <?= User::renderLoginForm(false, User::isLoggedIn()) ?>
     </div>
 </div>
 </body>
