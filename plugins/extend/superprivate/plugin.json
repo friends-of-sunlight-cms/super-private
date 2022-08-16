@@ -3,7 +3,9 @@
     "name": "Super Private Website",
     "description": "For absolutely private pages without site layout",
     "version": "1.0",
-    "api": "^8.0",
+    "environment": {
+        "system": "^8.0"
+    },
     "url": "https://jdanek.eu/",
     "class": "SuperPrivatePlugin",
     "events": [
