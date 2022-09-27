@@ -2,7 +2,7 @@
     "$schema": "../../../system/schema/extend.json",
     "name": "Super Private Website",
     "description": "For absolutely private pages without site layout",
-    "version": "1.0",
+    "version": "0.9.0",
     "environment": {
         "system": "^8.0"
     },
