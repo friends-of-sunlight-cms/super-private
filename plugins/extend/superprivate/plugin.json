@@ -10,6 +10,6 @@
     "author": "Friends of Sunlight CMS",
     "class": "SuperPrivatePlugin",
     "events": [
-        {"event": "index.ready", "method": "overloadTemplate"}
+        {"event": "tpl.start", "method": "overloadTemplate"}
     ]
 }
