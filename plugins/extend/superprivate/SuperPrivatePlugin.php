@@ -7,11 +7,6 @@ use Sunlight\Settings;
 use Sunlight\User;
 use Sunlight\WebState;
 
-/**
- * Super private pages
- *
- * @author Jirka Daněk <jdanek.eu>
- */
 class SuperPrivatePlugin extends ExtendPlugin
 {
     public function overloadTemplate(array $args): void
