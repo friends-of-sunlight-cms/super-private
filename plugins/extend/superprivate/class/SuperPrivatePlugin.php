@@ -12,7 +12,7 @@ class SuperPrivatePlugin extends ExtendPlugin
     public function overloadTemplate(array $args): void
     {
         if (!User::isLoggedIn() && Settings::get('notpublicsite')) {
-            $args['index']->output = require __DIR__ . '/script.php';
+            $args['index']->output = require __DIR__ . DIRECTORY_SEPARATOR . '../script/script.php';
             exit;
         }
     }
