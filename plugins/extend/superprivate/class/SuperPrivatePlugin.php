@@ -5,7 +5,6 @@ namespace SunlightExtend\Superprivate;
 use Sunlight\Plugin\ExtendPlugin;
 use Sunlight\Settings;
 use Sunlight\User;
-use Sunlight\WebState;
 
 class SuperPrivatePlugin extends ExtendPlugin
 {
