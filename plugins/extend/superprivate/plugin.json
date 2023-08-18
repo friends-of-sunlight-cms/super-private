@@ -9,8 +9,7 @@
     "authors": [
         {"name": "Friends of Sunlight CMS", "url": "https://github.com/friends-of-sunlight-cms/"}
     ],
-    "class": "SuperPrivatePlugin",
     "events": [
-        {"event": "tpl.start", "method": "overloadTemplate"}
+        {"event": "tpl.start", "script": "event/tpl_start.php"}
     ]
 }
